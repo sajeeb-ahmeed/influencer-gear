@@ -1,50 +1,7 @@
-html,
-body,
-div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-img,
-small,
-strong,
-i,
-center,
-ol,
-ul,
-li,
-article,
-aside,
-footer,
-header,
-menu,
-nav,
-section {
+* {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    box-sizing: border-box;
-}
-
-article,
-footer,
-header,
-menu,
-nav,
-section {
-    display: block;
-}
-
-ol,
-ul,
-li {
-    list-style: none;
+    box-sizing: border-box
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
@@ -77,7 +34,7 @@ a {
 }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 30px;
 }
@@ -100,6 +57,13 @@ a {
     display: inline-block;
     padding: 0 5px;
     color: var(--secondary-color);
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(195, 195, 195, 0), rgba(98, 98, 98, 0.75), rgba(75, 59, 59, 0));
+
 }
 
 .primary-button:active {
@@ -195,5 +159,33 @@ a {
     transition: transform 2s ease-in-out;
     border-radius: 50%;
     cursor: pointer;
+}
 
+/* ==== Sponsors Company Style ==== */
+.sponsor-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.imagess {
+    display: inline-block;
+    width: 100px;
+    height: 56px;
+
+}
+
+.company-logo {
+    width: 100px;
+    height: 55px;
+    align-items: center;
+    justify-items: center;
+}
+
+.company-logo img {
+    width: 100%;
+    cursor: pointer;
+    color: ivory;
 }
