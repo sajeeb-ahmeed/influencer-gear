@@ -243,10 +243,17 @@ hr {
     width: 300px;
     height: 256px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .popular-items-group .items-image {
     width: 100%;
+    border-radius: 10px;
+}
+
+.popular-items-group:hover .items-image {
+    transform: scale(1.4);
+    transition: transform 2s ease-in-out;
     border-radius: 10px;
 }
 
@@ -279,6 +286,18 @@ hr {
     color: var(--secondary-color);
     padding-top: 7px;
     line-height: 1.2;
+}
+
+.see-more-products {
+    display: grid;
+    justify-content: end;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.color-primary,
+.see-more-products {
+    color: var(--primary-color);
 }
 
 /* ====Footer Section==== */
