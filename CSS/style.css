@@ -15,7 +15,11 @@ body {
     --primary-color: #E03B8B;
     --secondary-color: #e7e7e7;
     --bg-color: #0F172A;
-    --opstional-color: #1f6a9c;
+    --opstional-color: #318bc7;
+    --shawods-clolor: #000000;
+    --font-awesome: #947717;
+    --fs: #dfdf9e;
+
 
 }
 
@@ -31,6 +35,10 @@ a {
     flex-direction: column;
     width: 100%;
     align-items: center;
+}
+
+.full-width {
+    width: 100%;
 }
 
 .container {
@@ -53,6 +61,19 @@ a {
     top: 0;
 }
 
+
+.fonts-awesome-icon {
+    color: var(--font-awesome);
+    font-size: 10px;
+    padding: 1px;
+}
+
+.font-half {
+    font-size: 10px;
+    padding: 1px;
+    color: var(--fs);
+}
+
 .font-span {
     display: inline-block;
     padding: 0 5px;
@@ -69,6 +90,19 @@ hr {
 .primary-button:active {
     top: 5px;
     box-shadow: 0 2px 0 var(--primary-color);
+}
+
+.start-tittle {
+    font-size: 40px;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 1px var(--opstional-color);
+}
+
+
+
+.center {
+    text-align: center;
+    font-size: 28px;
 }
 
 /* =====Header Style ===== */
@@ -123,11 +157,6 @@ hr {
     align-items: flex-start;
 }
 
-.start-journey-tittle {
-    font-size: 40px;
-    color: var(--secondary-color);
-    text-shadow: 1px 1px 1px var(--opstional-color);
-}
 
 .Influencer-ditails .info-Influencer {
     color: var(--secondary-color);
@@ -189,3 +218,67 @@ hr {
     cursor: pointer;
     color: ivory;
 }
+
+/* ==== Popular Items Style ==== */
+.popular-items-outer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 100px;
+}
+
+.hot-favourite-item-group {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 5px 5px 11px 0px #000000;
+    box-shadow: 5px 5px 11px 0px var(--shawods-clolor);
+    border-radius: 7px;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 15px;
+}
+
+.popular-items-group {
+    width: 300px;
+    height: 256px;
+    margin-bottom: 10px;
+}
+
+.popular-items-group .items-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.items-ditails {
+    padding: 10px 0;
+    margin-top: 4px;
+}
+
+.items-ditails .item-tittle {
+    font-size: 24px;
+    color: var(--secondary-color);
+    padding-bottom: 6px;
+}
+
+.item-price-group {
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+
+.rating-point {
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.items-about {
+    font-size: 13px;
+    color: var(--secondary-color);
+    padding-top: 7px;
+    line-height: 1.2;
+}
+
+/* ====Footer Section==== */
