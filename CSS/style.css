@@ -282,10 +282,11 @@ hr {
 }
 
 .items-about {
-    font-size: 13px;
+    font-size: 15px;
     color: var(--secondary-color);
     padding-top: 7px;
     line-height: 1.2;
+    font-weight: 400;
 }
 
 .see-more-products {
@@ -300,4 +301,32 @@ hr {
     color: var(--primary-color);
 }
 
-/* ====Footer Section==== */
+/* ====Infulancer  Section==== */
+.social-media-infulancer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    margin: 10px;
+}
+
+.infulancer-pro-img {
+    height: 250px;
+    width: 490px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.infulancer-branding-head {
+    color: var(--secondary-color);
+    padding: 7px 0;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px var(--opstional-color);
+
+}
+
+.infulancer-branding li {
+    list-style: circle;
+    font-weight: 500;
+    color: var(--secondary-color);
+    padding-top: 10px;
+}
